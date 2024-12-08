@@ -42,7 +42,7 @@ while True:
             x3 = np.interp(x1, (frameR, wCam - frameR), (0, 1920))  # Adjust screen size
             y3 = np.interp(y1, (frameR, hCam - frameR), (0, 1080))
 
-            # Smoothen values
+            # Smoothen values for better control
             cLocX = pLocX + (x3 - pLocX) / smoothening
             cLocY = pLocY + (y3 - pLocY) / smoothening
 
